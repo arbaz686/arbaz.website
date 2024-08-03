@@ -1,0 +1,37 @@
+---
+gridLayout: grid-landing
+templateClass: template-landing
+---
+
+{% include "head.njk" %}
+
+{% include "banner.njk" %}
+
+<main
+  id="section-main"
+  class="content">
+
+  <p class="breadcrumb">
+    <a href="{{ '/' | url }}">Home</a>
+  </p>
+  <h1
+    id="title"
+    style="margin-top:0;"
+    aria-current="page">
+    {{ title | safe }}
+  </h1>
+
+  <div
+    id="content"
+    class="flow post__content">
+    <p class="measure">
+      {{ lede | safe }}
+    </p>
+
+    {{ content | safe }}
+  </div>
+</main>
+
+<div class="footer">
+  {% include "foot.njk" %}
+</div>

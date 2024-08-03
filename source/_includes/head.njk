@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  {% if templateClass %}class="{{ templateClass }}"{% endif %}
+  itemscope itemtype="http://schema.org/Webpage">
+<head>
+  {% include "meta/charset-viewport.njk" %}
+
+  {% include "meta/title-description-author.njk" %}
+  {% include "meta/feed-sitemap.njk" %}
+
+  {% include "meta/styles.njk" %}
+  {% include "meta/icons-theming.njk" %}
+  {% include "meta/social-media.njk" %}
+
+  {% include "meta/scripts/mustard-cutting.njk" %}
+  {# {% include "meta/performance.njk" %} #}
+  {% include "meta/scripts/analytics.njk" %}
+</head>
+<body
+  class="[ grid {% if templateClass %}{{ gridLayout}}{% endif %} gutter ] [ margin-bottom-2 ]"
+  itemscope itemtype="http://schema.org/ProfilePage">
+
+{% include "components/skipnav.njk" %}
+
