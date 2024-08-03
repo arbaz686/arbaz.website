@@ -101,6 +101,56 @@ body {
   }
 }
 
+.c-homepage__footer{
+  color: #ffffff;
+  font-family: 'Metropolis', sans-serif;
+  grid-column: 1 / 13;
+  padding: 10vw 5vw;
+
+  @media screen and (min-width: 768px) {
+    padding: 8vw 10vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 8vw 15vw;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: #ffffff;
+  }
+
+  a {
+    background-color: transparent;
+    background-image: linear-gradient(120deg, #48d7e7 0%, #48d7e7 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.05em;
+    background-position: 0 90%;
+    box-shadow: none;
+    color: #111111;
+    transition: background-size 100ms ease-in, color 100ms ease-in;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-size: 100% 100%;
+    }
+
+    @media screen and (prefers-color-scheme: dark) {
+      color: #ffffff;
+
+      &:hover,
+      &:focus {
+        color: #111111;
+      }
+    }
+
+    @media screen and (prefers-reduced-motion) {
+      transition: none;
+    }
+  }
+}
+
 .c-homepage__hello {
   padding: 15vw 5vw;
 
