@@ -3,11 +3,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #111111;
-  }
+  background-color: #111111;
 }
 
 .l-grid {
@@ -19,9 +15,9 @@ body {
   @include hide-visually();
 
   &:focus {
-    background-color: #111111;
-    box-shadow: 0 0 0 0.25rem #ffffff;
-    color: #f5ed52;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 0.25rem #111111;
+    color: #111111;
     display: block;
     font-size: var(--scale3);
     padding-top: var(--scale2);
@@ -34,14 +30,6 @@ body {
     width: calc(100% - var(--scale4));
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
-
-  @media screen and (prefers-color-scheme: dark) {
-    &:focus {
-      background-color: #ffffff;
-      box-shadow: 0 0 0 0.25rem #111111;
-      color: #111111;
-    }
-  }
 }
 
 .c-homepage__hello,
@@ -52,56 +40,6 @@ body {
 .c-homepage__projects,
 .c-homepage__contact,
 .c-homepage__footer {
-  color: #111111;
-  font-family: 'Metropolis', sans-serif;
-  grid-column: 1 / 13;
-  padding: 10vw 5vw;
-
-  @media screen and (min-width: 768px) {
-    padding: 8vw 10vw;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding: 8vw 15vw;
-  }
-
-  @media screen and (prefers-color-scheme: dark) {
-    color: #ffffff;
-  }
-
-  a {
-    background-color: transparent;
-    background-image: linear-gradient(120deg, #48d7e7 0%, #48d7e7 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.05em;
-    background-position: 0 90%;
-    box-shadow: none;
-    color: #111111;
-    transition: background-size 100ms ease-in, color 100ms ease-in;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      color: #ffffff;
-      background-size: 100% 100%;
-    }
-
-    @media screen and (prefers-color-scheme: dark) {
-      color: #ffffff;
-
-      &:hover,
-      &:focus {
-        color: #111111;
-      }
-    }
-
-    @media screen and (prefers-reduced-motion) {
-      transition: none;
-    }
-  }
-}
-
-.c-homepage__footer{
   color: #ffffff;
   font-family: 'Metropolis', sans-serif;
   grid-column: 1 / 13;
@@ -115,8 +53,41 @@ body {
     padding: 8vw 15vw;
   }
 
-  @media screen and (prefers-color-scheme: dark) {
+  a {
+    background-color: transparent;
+    background-image: linear-gradient(120deg, #48d7e7 0%, #48d7e7 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.05em;
+    background-position: 0 90%;
+    box-shadow: none;
     color: #ffffff;
+    transition: background-size 100ms ease-in, color 100ms ease-in;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #111111;
+      background-size: 100% 100%;
+    }
+
+    @media screen and (prefers-reduced-motion) {
+      transition: none;
+    }
+  }
+}
+
+.c-homepage__footer {
+  color: #ffffff;
+  font-family: 'Metropolis', sans-serif;
+  grid-column: 1 / 13;
+  padding: 10vw 5vw;
+
+  @media screen and (min-width: 768px) {
+    padding: 8vw 10vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 8vw 15vw;
   }
 
   a {
@@ -132,17 +103,8 @@ body {
 
     &:hover,
     &:focus {
-      color: #ffffff;
+      color: #111111;
       background-size: 100% 100%;
-    }
-
-    @media screen and (prefers-color-scheme: dark) {
-      color: #ffffff;
-
-      &:hover,
-      &:focus {
-        color: #ffffff;
-      }
     }
 
     @media screen and (prefers-reduced-motion) {
@@ -179,43 +141,23 @@ body {
 }
 
 .c-homepage__about a {
-  background-image: linear-gradient(120deg, #872A25 0%, #872A25 100%);
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #69ddae 0%, #69ddae 100%);
-  }
+  background-image: linear-gradient(120deg, #69ddae 0%, #69ddae 100%);
 }
 
 .c-homepage__interests a {
-  background-image: linear-gradient(120deg, #8E861A 0%, #8E861A 100%);
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #f5ed52 0%, #f5ed52 100%);
-  }
+  background-image: linear-gradient(120deg, #f5ed52 0%, #f5ed52 100%);
 }
 
 .c-homepage__writing a {
-  background-image: linear-gradient(120deg, #146A69 0%, #146A69 100%);
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #69ddae 0%, #69ddae 100%);
-  }
+  background-image: linear-gradient(120deg, #69ddae 0%, #69ddae 100%);
 }
 
 .c-homepage__speaking a {
-  background-image: linear-gradient(120deg, #9f799e 0%, #872A25 100%);
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #ff8764 0%, #ff8764 100%);
-  }
+  background-image: linear-gradient(120deg, #ff8764 0%, #ff8764 100%);
 }
 
 .c-homepage__projects a {
-  background-image: linear-gradient(120deg, #595959 0%, #595959 100%);
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #dddddd 0%, #dddddd 100%);
-  }
+  background-image: linear-gradient(120deg, #dddddd 0%, #dddddd 100%);
 }
 
 .c-homepage__contact a {
@@ -223,11 +165,7 @@ body {
 }
 
 .c-homepage__footer a {
-  background-image: linear-gradient(120deg, #48d7e7 0%, #48d7e7 100%);
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #2484A6 0%, #2484A6 100%);
-  }
+  background-image: linear-gradient(120deg, #2484A6 0%, #2484A6 100%);
 }
 
 .c-homepage__about p,
@@ -244,72 +182,39 @@ body {
 
 .c-homepage__hello {
   background-color: #2484A6;
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #2484A6;
-  }
 }
 
 .c-homepage__about {
   background-color: #0c5553;
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #0c5553;
-  }
 }
 
 .c-homepage__interests {
   background-color: #8E861A;
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #8E861A;
-  }
 }
 
 .c-homepage__writing {
   background-color: #146A69;
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #146A69;
-  }
 }
 
 .c-homepage__speaking {
   background-color: #872A25;
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #872a25;
-  }
 }
 
 .c-homepage__projects {
   background-color: #595959;
-
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #595959;
-  }
 }
 
 .c-homepage__contact {
   background-color: #dddddd;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #dddddd;
-
-    h2,
-    a {
-      color: #111111;
-    }
+  h2,
+  a {
+    color: #111111;
   }
 }
 
 .c-homepage__footer {
   background-color: #111111;
-
-  @media screen and (prefers-color-scheme: dark) {
-    color: #ffffff;
-  }
-
 }
 
 h1.c-homepage__title,
@@ -406,4 +311,3 @@ h2.c-homepage__subtitle {
     font-size: var(--scale1);
   }
 }
-
