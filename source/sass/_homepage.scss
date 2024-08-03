@@ -327,16 +327,18 @@ h2.c-homepage__subtitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 
   .link {
     text-decoration: none;
     color: inherit;
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
   }
 
   @media (max-width: 600px) {
-    flex-direction: column;
     gap: 10px;
   }
 }
@@ -345,4 +347,5 @@ h2.c-homepage__subtitle {
   text-align: center;
   padding: 20px;
 }
+
 
