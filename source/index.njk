@@ -4,34 +4,6 @@
   {% include "meta/charset-viewport.njk" %}
   {% include "meta/title-description-author.njk" %}
   {% include "meta/styles.njk" %}
-  <style>
-    .links-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px; /* Smaller gap for better responsiveness */
-
-      .link {
-        text-decoration: none;
-        color: inherit;
-        text-align: center;
-        min-width: 80px; /* Adjust minimum width for responsiveness */
-        flex: 1;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .links-container {
-        flex-direction: row;
-        justify-content: space-evenly;
-      }
-
-      .link {
-        flex-basis: 30%; /* Adjust flex basis for smaller screens */
-      }
-    }
-  </style>
 </head>
 <body>
 <a class="c-homepage__skipnav" id="section-skipnav" class="skipnav" href="#title">Skip to main content</a>
