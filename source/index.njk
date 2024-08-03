@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/Webpage">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   {% include "meta/charset-viewport.njk" %}
-
   {% include "meta/title-description-author.njk" %}
-
   {% include "meta/styles.njk" %}
-  
 </head>
-
+<body>
 <a class="c-homepage__skipnav" id="section-skipnav" class="skipnav" href="#title">Skip to main content</a>
-
 <main id="main" class="l-grid">
-
   <div id="hello" class="c-homepage__hello">
     <h1 class="c-homepage__title" id="title" style="display: flex; justify-content: center; align-items: center; font-size: calc(12px + 4vw); flex-wrap: wrap; text-align: center;">
       <span id="greeting">Hello</span>
       <span>, I’m Arbaz Ahmad</span>
     </h1>
-    <div style="display: flex; justify-content: center; align-items: center; font-size: 2rem; gap: 20px;">
-      <a rel="me" href="https://www.linkedin.com/in/arbaz-ahmad/" style="text-decoration: none; color: inherit;">LinkedIn</a>
-      <a rel="me" href="https://drive.google.com/file/d/1Zk6KzReHLtJFhBoSxVje3abNtfdCwq8P/view?usp=sharing" style="text-decoration: none; color: inherit;">Resume</a>
-      <a rel="me" href="https://github.com/arbaz686" style="text-decoration: none; color: inherit;">GitHub</a>
+    <div class="links-container">
+      <a rel="me" href="https://www.linkedin.com/in/arbaz-ahmad/" class="link">LinkedIn</a>
+      <a rel="me" href="https://drive.google.com/file/d/1Zk6KzReHLtJFhBoSxVje3abNtfdCwq8P/view?usp=sharing" class="link">Resume</a>
+      <a rel="me" href="https://github.com/arbaz686" class="link">GitHub</a>
     </div>
   </div>
-
   <script>
     const greetings = ["हेलो", "Bonjour", "Hola", "مرحبا", "Hallo", "Ciao", "你好"];
     let currentGreetingIndex = 0;
@@ -44,7 +36,6 @@
     // Change greeting every 2 seconds
     setInterval(changeGreeting, 2000);
   </script>
-
   <div id="about" class="c-homepage__about">
     <p itemprop="mainContentOfPage">
       I’m a <a>Full Stack Developer</a>, <a>Tech Enthusiast</a>, and <a>Chess Player</a>.
@@ -55,12 +46,10 @@
     <br><br>
     And I love playing chess and currently my ELO is 1264 on <a href="https://www.chess.com">Chess.com</a>
   </div>
-
   <div id="speaking" class="c-homepage__speaking">
     <h2 class="c-homepage__subtitle" id="title-speaking">
       My Tech Stack are:
     </h2>
-
     <ul role="list" class="c-homepage__list">
       <li role="listitem"><a>Front-End: HTML, CSS, JavaScript, React</a></li>
       <li role="listitem"><a>Back-End: Node.js, Express, Python, Django</a></li>
@@ -71,12 +60,10 @@
       <li role="listitem"><a>APIs: RESTful</a></li>
     </ul>
   </div>
-
   <div id="projects" class="c-homepage__projects">
     <h2 class="c-homepage__subtitle" id="title-projects">
       I <a>maintain some projects</a>. Currently I'm working on:
     </h2>
-
     <p itemscope itemprop="workExample" itemtype="http://schema.org/WebSite" class="c-homepage__featured-title">
       <a>Memory Based Game</a>
       <span class="c-homepage__featured-source">
@@ -84,12 +71,10 @@
       </span>
     </p>
   </div>
-
   <div id="interests" class="c-homepage__interests">
     <h2 class="c-homepage__subtitle" id="title-interests">
       My interests are:
     </h2>
-
     <ul role="list" class="c-homepage__list">
       <li role="listitem"><a>Full Stack Development</a></li>
       <li role="listitem"><a>Working in the open</a></li>
@@ -100,12 +85,10 @@
       <li role="listitem"><a>Chess Strategy and Tactics</a></li>
     </ul>
   </div>
-
   <address id="contact" class="c-homepage__contact">
     <h2 class="c-homepage__subtitle" id="section-contact">
       Here’s how to contact&nbsp;me:
     </h2>
-
     <ul role="list" class="c-homepage__list c-homepage__list--contact">
       <li role="listitem" itemscope itemtype="http://schema.org/Organization">
         <a rel="me" href="https://github.com/arbaz686"><span itemprop="memberOf">GitHub</span></a>
@@ -122,7 +105,6 @@
     </ul>
   </address>
 </main>
-
 <footer id="navigation" class="c-homepage__footer">
   <h2 class="c-homepage__subtitle" id="title-navigation">
     And here’s the end...
@@ -139,8 +121,6 @@
     Thank you for visiting my portfolio. I’m excited about the possibilities ahead and look forward to potential collaborations!
   </p>
 </footer>
-
 {% include "meta/scripts/main.njk" %}
-
 </body>
 </html>
