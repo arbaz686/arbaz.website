@@ -1,0 +1,31 @@
+// position: sticky
+// child align-self: start
+
+.breadcrumb {
+  grid-area: breadcrumb;
+}
+
+
+.content {
+  grid-area: content;
+}
+
+
+.additional {
+  grid-area: additional;
+}
+
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+
+.banner {
+  grid-area: banner;
+}
+
+
+.footer {
+  grid-area: footer;
+}

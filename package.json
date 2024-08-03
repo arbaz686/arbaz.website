@@ -1,0 +1,60 @@
+{
+  "name": "arbaz.website",
+  "description": "Inclusive design advocate, writer, developer, and speaker",
+  "version": "1.5.70",
+  "license": "CC-BY-NC-SA-4.0",
+  "homepage": "https://github.com/arbaz686/arbaz.website/blob/main/README.md",
+  "author": {
+    "name": "Arbaz Ahmad",
+    "email": "ahmadarbaz686@gmail.com",
+    "url": "http://arbaz.website"
+  },
+  "scripts": {
+    "watch:sass": "node-sass-chokidar ./source/sass -o ./published --watch",
+    "watch:eleventy": "eleventy --serve",
+    "compile:sass": "node-sass-chokidar ./source/sass -o ./published",
+    "compile:eleventy": "eleventy",
+    "postbuild": "postcss published/*.css -u autoprefixer cssnano -r",
+    "start": "npm-run-all compile:sass --parallel watch:*",
+    "build": "npm-run-all compile:sass compile:eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/arbaz686/arbaz.website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arbaz686/arbaz.website/issues",
+    "email": "ahmadarbaz686@gmail.com"
+  },
+  "keywords": [
+    "Arbaz",
+    "Ahmad",
+    "arbazahmad",
+    "delhi",
+    "fullstack"
+  ],
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.2.0",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
+    "autoprefixer": "^9.8.6",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.13",
+    "eleventy-plugin-sass": "^1.1.1",
+    "luxon": "^1.28.1",
+    "markdown-it": "^12.3.2",
+    "markdown-it-anchor": "^5.2.5",
+    "node-sass": "^4.14.1",
+    "node-sass-chokidar": "^1.5.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.0.0",
+    "postcss-cli": "^8.1.0"
+  },
+  "dependencies": {
+    "liquidjs": "^10.16.1"
+  }
+}

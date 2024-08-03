@@ -1,0 +1,54 @@
+.grid {
+  padding: $global-bleed;
+
+  @media screen and (min-width: map-get($breakpoint, "medium")) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @media (orientation: landscape) {
+    padding-right: env(safe-area-inset-right);
+    padding-left: env(safe-area-inset-left);
+  }
+}
+
+
+.grid-home {
+  @media screen and (min-width: map-get($breakpoint, "large")) {
+    grid-template-columns: 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      ". banner banner banner .      .      .      ."
+      ". frame  frame  frame  frame  frame  frame  ."
+      ". footer footer footer footer footer footer .";
+  }
+}
+
+
+.grid-footer {
+  background-color: red;
+  @media screen and (min-width: map-get($breakpoint, "large")) {
+  }
+}
+
+
+.grid-post,
+.grid-landing {
+  @media screen and (min-width: map-get($breakpoint, "medium")) {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+      ".    banner     banner     banner     .          .          .       ."
+      ".    heading    heading    heading    heading    heading    heading ."
+      ".    content    content    content    content    content    .       ."
+      ".    additional additional additional additional additional .       ."
+      ".    footer     footer     footer     footer     footer     footer  .";
+  }
+}
+
+
+.grid-post {
+  @media (orientation: landscape) {
+    padding-right: var(--scale0);
+    padding-left: var(--scale0);
+  }
+}
