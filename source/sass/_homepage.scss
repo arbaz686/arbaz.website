@@ -5,9 +5,7 @@ body {
   padding: 0;
   background-color: #ffffff;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #111111;
-  }
+
 }
 
 .l-grid {
@@ -35,13 +33,6 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
-  @media screen and (prefers-color-scheme: dark) {
-    &:focus {
-      background-color: #ffffff;
-      box-shadow: 0 0 0 0.25rem #111111;
-      color: #111111;
-    }
-  }
 }
 
 .c-homepage__hello,
@@ -65,9 +56,6 @@ body {
     padding: 8vw 15vw;
   }
 
-  @media screen and (prefers-color-scheme: dark) {
-    color: #ffffff;
-  }
 
   a {
     background-color: transparent;
@@ -86,14 +74,6 @@ body {
       background-size: 100% 100%;
     }
 
-    @media screen and (prefers-color-scheme: dark) {
-      color: #ffffff;
-
-      &:hover,
-      &:focus {
-        color: #111111;
-      }
-    }
 
     @media screen and (prefers-reduced-motion) {
       transition: none;
@@ -115,9 +95,7 @@ body {
     padding: 8vw 15vw;
   }
 
-  @media screen and (prefers-color-scheme: dark) {
-    color: #ffffff;
-  }
+
 
   a {
     background-color: transparent;
@@ -136,14 +114,7 @@ body {
       background-size: 100% 100%;
     }
 
-    @media screen and (prefers-color-scheme: dark) {
-      color: #ffffff;
 
-      &:hover,
-      &:focus {
-        color: #ffffff;
-      }
-    }
 
     @media screen and (prefers-reduced-motion) {
       transition: none;
@@ -181,41 +152,30 @@ body {
 .c-homepage__about a {
   background-image: linear-gradient(120deg, #872A25 0%, #872A25 100%);
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #69ddae 0%, #69ddae 100%);
-  }
 }
 
 .c-homepage__interests a {
   background-image: linear-gradient(120deg, #8E861A 0%, #8E861A 100%);
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #f5ed52 0%, #f5ed52 100%);
-  }
+  
 }
 
 .c-homepage__writing a {
   background-image: linear-gradient(120deg, #146A69 0%, #146A69 100%);
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #69ddae 0%, #69ddae 100%);
-  }
+  
 }
 
 .c-homepage__speaking a {
   background-image: linear-gradient(120deg, #9f799e 0%, #872A25 100%);
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #ff8764 0%, #ff8764 100%);
-  }
+  
 }
 
 .c-homepage__projects a {
   background-image: linear-gradient(120deg, #595959 0%, #595959 100%);
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #dddddd 0%, #dddddd 100%);
-  }
+  
 }
 
 .c-homepage__contact a {
@@ -225,9 +185,7 @@ body {
 .c-homepage__footer a {
   background-image: linear-gradient(120deg, #48d7e7 0%, #48d7e7 100%);
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-image: linear-gradient(120deg, #2484A6 0%, #2484A6 100%);
-  }
+  
 }
 
 .c-homepage__about p,
@@ -245,62 +203,42 @@ body {
 .c-homepage__hello {
   background-color: #2484A6;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #2484A6;
-  }
+  
 }
 
 .c-homepage__about {
   background-color: #0c5553;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #0c5553;
-  }
+ 
 }
 
 .c-homepage__interests {
   background-color: #8E861A;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #8E861A;
-  }
+ 
 }
 
 .c-homepage__writing {
   background-color: #146A69;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #146A69;
-  }
+  
 }
 
 .c-homepage__speaking {
   background-color: #872A25;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #872a25;
-  }
+  
 }
 
 .c-homepage__projects {
   background-color: #595959;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #595959;
-  }
 }
 
 .c-homepage__contact {
   background-color: #dddddd;
 
-  @media screen and (prefers-color-scheme: dark) {
-    background-color: #dddddd;
-
-    h2,
-    a {
-      color: #111111;
-    }
-  }
+  
 }
 
 .c-homepage__footer {
