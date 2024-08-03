@@ -193,7 +193,7 @@ body {
 }
 
 .c-homepage__hello {
-  background-color: #48d7e7;
+  background-color: #2484A6;
 
   @media screen and (prefers-color-scheme: dark) {
     background-color: #2484A6;
@@ -201,7 +201,7 @@ body {
 }
 
 .c-homepage__about {
-  background-color: #ff8764;
+  background-color: #0c5553;
 
   @media screen and (prefers-color-scheme: dark) {
     background-color: #0c5553;
@@ -209,7 +209,7 @@ body {
 }
 
 .c-homepage__interests {
-  background-color: #f5ed52;
+  background-color: #8E861A;
 
   @media screen and (prefers-color-scheme: dark) {
     background-color: #8E861A;
@@ -217,7 +217,7 @@ body {
 }
 
 .c-homepage__writing {
-  background-color: #69ddae;
+  background-color: #146A69;
 
   @media screen and (prefers-color-scheme: dark) {
     background-color: #146A69;
@@ -225,7 +225,7 @@ body {
 }
 
 .c-homepage__speaking {
-  background-color: #3a092a;
+  background-color: #872A25;
 
   @media screen and (prefers-color-scheme: dark) {
     background-color: #872a25;
@@ -233,7 +233,7 @@ body {
 }
 
 .c-homepage__projects {
-  background-color: #dddddd;
+  background-color: #595959;
 
   @media screen and (prefers-color-scheme: dark) {
     background-color: #595959;
@@ -241,7 +241,7 @@ body {
 }
 
 .c-homepage__contact {
-  background-color: #ffffff;
+  background-color: #dddddd;
 
   @media screen and (prefers-color-scheme: dark) {
     background-color: #dddddd;
@@ -255,6 +255,11 @@ body {
 
 .c-homepage__footer {
   background-color: #111111;
+
+  @media screen and (prefers-color-scheme: dark) {
+    color: #ffffff;
+  }
+
 }
 
 h1.c-homepage__title,
