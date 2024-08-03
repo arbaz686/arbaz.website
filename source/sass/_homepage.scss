@@ -1,8 +1,5 @@
 html,
 body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #ffffff;
 
   @media screen and (prefers-color-scheme: dark) {
@@ -27,11 +24,12 @@ body {
     padding-top: var(--scale2);
     padding-bottom: var(--scale2);
     position: fixed;
-    top: var(--scale2);
-    left: var(--scale2);
+      top: var(--scale2);
+      left: var(--scale2);
     text-align: center;
     text-decoration-color: #48d7e7;
     width: calc(100% - var(--scale4));
+
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
 
@@ -44,6 +42,7 @@ body {
   }
 }
 
+
 .c-homepage__hello,
 .c-homepage__about,
 .c-homepage__interests,
@@ -55,13 +54,13 @@ body {
   color: #111111;
   font-family: 'Metropolis', sans-serif;
   grid-column: 1 / 13;
-  padding: 10vw 5vw;
+  padding: 15vw 2vw;
 
-  @media screen and (min-width: 768px) {
-    padding: 8vw 10vw;
+  @media screen and (min-width: map-get($breakpoint, "tiny")) {
+    padding: 15vw 6vw;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: map-get($breakpoint, "large")) {
     padding: 8vw 15vw;
   }
 
@@ -77,7 +76,9 @@ body {
     background-position: 0 90%;
     box-shadow: none;
     color: #111111;
-    transition: background-size 100ms ease-in, color 100ms ease-in;
+    transition:
+      background-size 100ms ease-in,
+      color 100ms ease-in;
     text-decoration: none;
 
     &:hover,
@@ -102,13 +103,13 @@ body {
 }
 
 .c-homepage__hello {
-  padding: 10vw 5vw;
+  padding: 15vw 2vw;
 
-  @media screen and (min-width: 768px) {
-    padding: 10vw 6vw;
+  @media screen and (min-width: map-get($breakpoint, "tiny")) {
+    padding: 15vw 6vw;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: map-get($breakpoint, "large")) {
     padding: 5vw 15vw;
   }
 }
@@ -172,6 +173,7 @@ body {
   background-image: linear-gradient(120deg, #48d7e7 0%, #48d7e7 100%);
 }
 
+
 .c-homepage__footer a {
   background-image: linear-gradient(120deg, #48d7e7 0%, #48d7e7 100%);
 
@@ -179,6 +181,7 @@ body {
     background-image: linear-gradient(120deg, #2484A6 0%, #2484A6 100%);
   }
 }
+
 
 .c-homepage__about p,
 .c-homepage__interests h2,
@@ -191,6 +194,7 @@ body {
   font-weight: bold;
   line-height: 1.15;
 }
+
 
 .c-homepage__hello {
   background-color: #48d7e7;
@@ -257,6 +261,7 @@ body {
   background-color: #111111;
 }
 
+
 h1.c-homepage__title,
 h2.c-homepage__subtitle {
   margin: 0 !important;
@@ -267,6 +272,7 @@ h2.c-homepage__subtitle {
   line-height: 1;
   max-width: auto;
 }
+
 
 .c-homepage__list {
   font-size: calc(1rem + 1.1vw);
@@ -279,14 +285,16 @@ h2.c-homepage__subtitle {
   }
 }
 
+
 .c-homepage__list--contact {
   display: grid;
   grid-template-columns: 1fr;
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: map-get($breakpoint, "small")) {
     grid-template-columns: 1fr 2fr;
   }
 }
+
 
 .c-homepage__featured-title {
   font-size: calc(1rem + 1.5vw);
@@ -295,24 +303,26 @@ h2.c-homepage__subtitle {
   max-width: 30ch;
 }
 
+
 .c-homepage__featured-source {
   display: block;
   font-size: calc(1rem + 0.7vw);
   margin-top: var(--scale0);
 }
 
+
 .c-homepage__nav-wrapper {
   display: grid;
   grid-template-columns: 1fr;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: map-get($breakpoint, "large")) {
     grid-template-columns: 1fr 2fr;
   }
 
   nav:nth-of-type(2) {
     margin-top: var(--scale2);
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: map-get($breakpoint, "medium")) {
       margin-top: 0;
     }
   }
@@ -321,29 +331,4 @@ h2.c-homepage__subtitle {
 #greeting {
   font-weight: bold;
   transition: opacity 0.5s; /* Smooth transition for changes */
-}
-
-.links-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  .link {
-    text-decoration: none;
-    color: inherit;
-    flex: 1;
-    text-align: center;
-    min-width: 100px;
-  }
-
-  @media (max-width: 600px) {
-    gap: 10px;
-  }
-}
-
-#hello {
-  text-align: center;
-  padding: 20px;
 }
