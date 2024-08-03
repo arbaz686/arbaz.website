@@ -328,20 +328,27 @@ h2.c-homepage__subtitle {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  min-width: 80px;
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .links-container {
+    justify-content: space-evenly;
+  }
 
   .link {
-    text-decoration: none;
-    color: inherit;
-    flex: 1;
-    text-align: center;
-    min-width: 100px;
-  }
-
-  @media (max-width: 600px) {
-    gap: 10px;
+    flex-basis: 30%;
   }
 }
+
 
 #hello {
   text-align: center;
