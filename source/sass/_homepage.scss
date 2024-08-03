@@ -322,3 +322,27 @@ h2.c-homepage__subtitle {
   font-weight: bold;
   transition: opacity 0.5s; /* Smooth transition for changes */
 }
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
+  }
+
+  @media (max-width: 600px) {
+    gap: 10px;
+  }
+}
+
+#hello {
+  text-align: center;
+  padding: 20px;
+}
