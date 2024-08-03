@@ -102,13 +102,13 @@ body {
 }
 
 .c-homepage__hello {
-  padding: 15vw 2vw;
+  padding: 10vw 5vw;
 
-  @media screen and (min-width: map-get($breakpoint, "tiny")) {
-    padding: 15vw 6vw;
+  @media screen and (min-width: 768px) {
+    padding: 10vw 6vw;
   }
 
-  @media screen and (min-width: map-get($breakpoint, "large")) {
+  @media screen and (min-width: 1200px) {
     padding: 5vw 15vw;
   }
 }
@@ -322,32 +322,3 @@ h2.c-homepage__subtitle {
   font-weight: bold;
   transition: opacity 0.5s; /* Smooth transition for changes */
 }
-
-.links-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-  text-align: center;
-  min-width: 80px;
-  flex: 1;
-}
-
-@media (max-width: 600px) {
-  .links-container {
-    justify-content: space-evenly;
-  }
-
-  .link {
-    flex-basis: 30%;
-  }
-}
-
-
-
