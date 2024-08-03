@@ -323,38 +323,27 @@ h2.c-homepage__subtitle {
   transition: opacity 0.5s; /* Smooth transition for changes */
 }
 
-    .links-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 10px; /* Smaller gap for better responsiveness */
-    }
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 
-    .link {
-      text-decoration: none;
-      color: inherit;
-      text-align: center;
-      flex-grow: 1;
-      min-width: auto; /* Ensure it doesn't stretch unnecessarily */
-    }
+  .link {
+    text-decoration: none;
+    color: inherit;
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
+  }
 
-    .link span {
-      display: inline-block; /* Restrict hover effect to text */
-      padding: 5px 10px; /* Add some padding for better click area */
-    }
+  @media (max-width: 600px) {
+    gap: 10px;
+  }
+}
 
-    .link:hover span {
-      background-color: #f0f0f0; /* Add a hover effect */
-      border-radius: 4px; /* Optional: make the hover effect rounded */
-    }
-
-    @media (max-width: 600px) {
-      .links-container {
-        justify-content: space-evenly;
-      }
-
-      .link {
-        flex-basis: 30%;
-      }
+#hello {
+  text-align: center;
+  padding: 20px;
 }
