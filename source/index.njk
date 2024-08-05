@@ -37,6 +37,23 @@
     // Change greeting every 2 seconds
     setInterval(changeGreeting, 2000);
   </script>
+
+  <script type="text/javascript">
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+  </script>
+
+  <script type="text/javascript">
+    document.addEventListener('copy', function(e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('selectstart', function(e) {
+        e.preventDefault();
+    });
+  </script>
+
   <div id="about" class="c-homepage__about">
     <p itemprop="mainContentOfPage">
       I’m a <a href="#" onclick="event.preventDefault();">Full Stack Developer</a>, <a href="#" onclick="event.preventDefault();">Tech Enthusiast</a>, and <a href="#" onclick="event.preventDefault();">Chess Player</a>.
