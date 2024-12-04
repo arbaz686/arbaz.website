@@ -1,0 +1,64 @@
+:root {
+  --max-width: #{$global-type-measure};
+  --gutter: #{$global-gutter};
+  --ratio: #{$global-ratio};
+  --scale0: #{$global-base-scale};
+
+  @for $i from 1 through $global-iteration {
+    --scale-#{$i}: calc(var(--scale-#{$i - 1}) / var(--ratio));
+  }
+
+  @for $i from 1 through $global-iteration {
+    --scale#{$i}: calc(var(--scale#{$i - 1}) * var(--ratio));
+  }
+
+  @each $name, $value in $animation-durations {
+    --animation-duration-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $animation-easing {
+    --animation-ease-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $border-radii {
+    --border-radius-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $border-widths {
+    --border-width-#{$name}: #{$value};
+  }
+
+  --color-type-tint: #{map-get($colors-palette, gray-lighter)};
+  --color-type: #{map-get($colors-palette, gray)};
+  --color-type-shade: #{map-get($colors-palette, gray-dark)};
+  --color-background-tint: #{map-get($colors-palette, gray-lighter)};
+  --color-background: #{map-get($colors-palette, white)};
+  --color-background-shade: #{map-get($colors-palette, gray-dark)};
+
+  @each $name, $value in $colors-sections {
+    --color-#{$name}: #{map-get($colors-palette, $value)};
+  }
+
+  @each $name, $value in $type-weights {
+    --font-weight-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $type-line-heights {
+    --line-height-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $type-tracking {
+    --tracking-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $type-typefaces {
+    --typeface-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $shadows {
+    --shadow-size-#{$name}: #{$value};
+  }
+
+  --z-index-basement: "-999999";
+  --z-index-ceiling: "999999";
+}

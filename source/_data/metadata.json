@@ -1,0 +1,24 @@
+{
+  "title": "Arbaz Ahmad",
+  "description": "Full Stack Developer",
+  "url": "https://arbaz.website",
+  "logo": "static/favicons/avatar.png",
+  "feed": {
+    "subtitle": "Inclusive design advocate, writer, developer, and speaker",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://arbaz.website/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://arbaz.website/feed/feed.json"
+  },
+  "author": {
+    "name": "Arbaz Ahmad",
+    "email": "ahmadarbaz686@gmail.com",
+    "url": "https://arbaz.website"
+  },
+  "social": {
+    "twitter": "4rbxz"
+  }
+}
